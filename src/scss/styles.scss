@@ -5,34 +5,36 @@
 @import 'layout/layout';
 @import 'pages/pages';
 
-.header {
+
+.menu {
+  background: url("../../dist/img/main-bg.png") center center no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  position: fixed;
+
+  .item-list {
+    display: flex;
+
+    .link {
+      color: $textColorLightGray;
+      font-family: $fontOpenSansLight;
+      margin-left: 35px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-inner {
   background: url("../../dist/img/main-bg.png");
   height: 100vh;
 
-  .main-menu {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-
-    .item-list {
-      display: flex;
-
-      .link {
-        color: $textColorLightGray;
-        font-family: $fontOpenSansLight;
-        margin-left: 35px;
-        text-transform: uppercase;
-      }
-    }
-  }
-
   .container {
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    //height: 100%;
-    //max-height: 100%;
 
     .title {
       font-size: 30px;
@@ -52,6 +54,8 @@
       background-color: $bgColorWhite;
       transform: rotate(50deg);
       border-radius: 5px;
+      position: absolute;
+      bottom: 40px;
     }
   }
 }
