@@ -11,8 +11,15 @@
   font-family: "DosisRegular";
   color: $textColorBlack;
   text-transform: uppercase;
+  letter-spacing: 11px;
 }
 .small-title {
 
+}
+
+.section-text {
+  font-size: 15px;
+  color: $textColorGray;
+  $fontOpenSansLight
 }
 // ========== DEFAULT COMPONENTS END ========== //
