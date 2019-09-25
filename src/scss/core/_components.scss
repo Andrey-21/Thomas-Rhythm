@@ -1,6 +1,6 @@
 // ========== DEFAULT COMPONENTS START ========== //
 .default-section {
-
+  padding-top: 30px;
 }
 .main-title {
   font-family: "DosisRegular";
@@ -14,12 +14,15 @@
   letter-spacing: 11px;
 }
 .small-title {
-
+  font-family: "DosisRegular";
+  color: $textColorBlack;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .section-text {
   font-size: 15px;
   color: $textColorGray;
-  $fontOpenSansLight
+  font-family: $fontOpenSansLight;
 }
 // ========== DEFAULT COMPONENTS END ========== //

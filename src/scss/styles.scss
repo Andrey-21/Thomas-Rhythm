@@ -53,10 +53,65 @@
       width: 30px;
       height: 30px;
       background-color: $bgColorWhite;
-      transform: rotate(50deg);
+      transform: rotate(45deg);
       border-radius: 5px;
       position: absolute;
       bottom: 40px;
+    }
+  }
+}
+
+.about {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  border-bottom: 1px solid $bgColorGray;
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+  .row {
+    display: flex;
+    margin: auto;
+    margin-bottom: 100px;
+
+    .about-text {
+      font-size: 24px;
+      color: $textColorGray;
+      font-family: $fontOpenSansLight;
+
+      .user {
+        font-size: 14px;
+        margin-top: 30px;
+      }
+    }
+
+    .section-text {
+      margin-right: 30px;
+    }
+  }
+
+  .about-user {
+    display: flex;
+    justify-content: space-between;
+
+    .about-team {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .img-team {
+        margin-bottom: 30px;
+      }
+
+      .name-user {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      .job-user {
+        font-size: 12px;
+      }
     }
   }
 }
