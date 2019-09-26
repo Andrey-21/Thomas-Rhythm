@@ -74,7 +74,7 @@
     margin: auto;
     margin-bottom: 100px;
 
-    .about-text {
+    .about-quote {
       font-size: 24px;
       color: $textColorGray;
       font-family: $fontOpenSansLight;
@@ -112,6 +112,55 @@
       .job-user {
         font-size: 12px;
       }
+    }
+  }
+}
+
+.services {
+  padding-top: 140px;
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .services-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .details-serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .services-icon {
+      margin-bottom: 35px;
+    }
+
+    .services-title {
+      font-size: 13px;
+    }
+  }
+
+  .services-text {
+    display: flex;
+
+    .services-quote {
+      font-size: 24px;
+      color: $textColorGray;
+      font-family: $fontOpenSansLight;
+
+      .user {
+        font-size: 14px;
+        margin-top: 30px;
+      }
+    }
+
+    .section-text {
+      margin-right: 30px;
     }
   }
 }

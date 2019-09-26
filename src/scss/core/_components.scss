@@ -10,11 +10,12 @@
 .section-title {
   font-family: "DosisRegular";
   color: $textColorBlack;
+  font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 11px;
 }
 .small-title {
-  font-family: "DosisRegular";
+  font-family: "DosisRegular" sans-serif;
   color: $textColorBlack;
   text-transform: uppercase;
   letter-spacing: 5px;
