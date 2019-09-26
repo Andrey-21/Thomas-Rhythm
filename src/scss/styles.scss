@@ -142,12 +142,13 @@
     }
 
     .services-title {
-      font-size: 13px;
+      font-size: 11px;
     }
   }
 
   .services-text {
     display: flex;
+    margin-bottom: 170px;
 
     .services-quote {
       font-size: 24px;
@@ -162,6 +163,38 @@
 
     .section-text {
       margin-right: 30px;
+    }
+  }
+
+  .black-section {
+    min-height: 440px;
+    background-color: #000;
+    position: relative;
+
+    .white-title {
+      color: $textColorLightGray;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .white-text {
+      color: $textColorGray;
+      font-size: 16px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .section-img {
+      position: absolute;
+      right: 0;
+      top: -40px;
+    }
+
+    .information {
+      height: 100%;
     }
   }
 }

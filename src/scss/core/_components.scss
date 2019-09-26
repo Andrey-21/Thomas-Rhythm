@@ -3,22 +3,22 @@
   padding-top: 30px;
 }
 .main-title {
-  font-family: "DosisRegular";
+  font-family: $fontDosisRegular;
   text-transform: uppercase;
   color: $textColorLightGray;
 }
 .section-title {
-  font-family: "DosisRegular";
+  font-family: $fontDosisRegular;
   color: $textColorBlack;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 11px;
 }
 .small-title {
-  font-family: "DosisRegular" sans-serif;
+  font-family: $fontDosisRegular;
   color: $textColorBlack;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
 }
 
 .section-text {
