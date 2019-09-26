@@ -175,26 +175,29 @@
       color: $textColorLightGray;
       font-size: 18px;
       margin-bottom: 18px;
+      padding: auto;
     }
 
     .white-text {
       color: $textColorGray;
       font-size: 16px;
+      margin-bottom: 40px;
     }
 
     .content {
       display: flex;
       justify-content: space-between;
+
+      .information {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .section-img {
       position: absolute;
       right: 0;
       top: -40px;
-    }
-
-    .information {
-      height: 100%;
     }
   }
 }
