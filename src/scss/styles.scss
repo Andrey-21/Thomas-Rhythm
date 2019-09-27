@@ -62,8 +62,6 @@
 }
 
 .about {
-  padding-top: 140px;
-  padding-bottom: 140px;
   border-bottom: 1px solid $bgColorGray;
 
   .section-title {
@@ -118,7 +116,7 @@
 }
 
 .services {
-  padding-top: 140px;
+  padding-bottom: 0;
 
   .section-title {
     display: flex;
@@ -249,6 +247,97 @@
       .white-title {
         color: $textColorWhite;
         font-size: 18px;
+      }
+    }
+  }
+}
+
+.who-works-us {
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .advantages-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+      margin-right: 20px;
+
+      .advantages-icon {
+        margin-bottom: 20px;
+      }
+
+      .small-title {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .slider {
+    background-color: $bgColorBlack;
+
+
+    .section-title {
+      color: $textColorLightGray;
+      display: flex;
+      justify-content: center;
+    }
+
+    .section-text {
+      font-size: 19px;
+      text-align: center;
+      color: $textColorLightGray;
+      margin-bottom: 30px;
+    }
+
+    .inner-title {
+      color: $textColorGray;
+      display: flex;
+      justify-content: center;
+    }
+
+    .slick-next {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      background-color: $bgColorWhite;
+      right: -40px;
+      transform: rotate(45deg);
+
+      &.slick-next:before {
+        position: absolute;
+        left: 17px;
+        top: 37px;
+        transform: rotate(-45deg);
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+
+    .slick-prev {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      background-color: $bgColorWhite;
+      left: -40px;
+      transform: rotate(45deg);
+
+      &.slick-prev:before {
+        position: absolute;
+        right: 17px;
+        top: 12px;
+        transform: rotate(-45deg);
+        font-size: 30px;
+        font-weight: bold;
       }
     }
   }
