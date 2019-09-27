@@ -19,12 +19,21 @@
   font-family: $fontDosisRegular;
   color: $textColorBlack;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
 }
 
 .section-text {
   font-size: 15px;
   color: $textColorGray;
   font-family: $fontOpenSansLight;
+}
+
+.form-field {
+  outline: none;
+  background-color: $bgColorWhite;
+  color: $textColorGray;
+  border: 1px solid $bgColorGray;
+  padding: 12px 10px;
+  font-size: 14px;
 }
 // ========== DEFAULT COMPONENTS END ========== //
