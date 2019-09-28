@@ -57,6 +57,11 @@
       border-radius: 5px;
       position: absolute;
       bottom: 40px;
+
+      .arrow {
+        transform: rotate(-45deg);
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -349,7 +354,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
-
+    align-items: flex-end;
     .right-title {
       color: $textColorGray;
       font-size: 13px;
@@ -411,3 +416,72 @@
     justify-content: center;
   }
 }
+
+.contacts {
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .contact-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .contact-address {
+    display: flex;
+    margin-bottom: 80px;
+
+    .address {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        width: 30px;
+        height: 30px;
+        background-color: $bgColorBlack;
+        transform: rotate(45deg);
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .all-form {
+      display: flex;
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .form-line {
+          width: 395px;
+          margin-bottom: 20px;
+          margin-right: 20px;
+        }
+
+      }
+
+      .form-area {
+        resize: none;
+        width: 395px;
+        height: 114px;
+      }
+    }
+  }
+
+  }
+}
+
+
