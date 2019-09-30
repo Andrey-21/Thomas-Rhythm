@@ -944,8 +944,7 @@ body {
   .contacts .container .contact-form {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    align-items: flex-end; }
+    flex-direction: column; }
     .contacts .container .contact-form .all-form {
       display: flex; }
       .contacts .container .contact-form .all-form .field {
