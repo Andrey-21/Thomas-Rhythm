@@ -13,6 +13,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   position: fixed;
+  z-index: 1;
 
   .item-list {
     display: flex;
@@ -193,6 +194,7 @@
       .information {
         display: flex;
         flex-direction: column;
+        align-items: end;
       }
     }
 
@@ -419,68 +421,67 @@
 
 .contacts {
 
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  .contact-title {
+  .container {
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
-  }
+    flex-wrap: wrap;
 
-  .contact-address {
-    display: flex;
-    margin-bottom: 80px;
-
-    .address {
+    .contact-title {
       display: flex;
-      flex-direction: row;
-      align-items: center;
       justify-content: center;
+      margin-bottom: 100px;
+    }
 
-      .icon {
-        width: 30px;
-        height: 30px;
-        background-color: $bgColorBlack;
-        transform: rotate(45deg);
-        border-radius: 5px;
-        margin-right: 10px;
+    .contact-address {
+      display: flex;
+      margin-bottom: 80px;
+
+      .address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          background-color: $bgColorBlack;
+          transform: rotate(45deg);
+          border-radius: 5px;
+          margin-right: 10px;
+        }
       }
     }
-  }
 
-  .contact-form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-items: flex-end;
-
-    .all-form {
+    .contact-form {
       display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-items: flex-end;
 
-      .field {
+      .all-form {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
 
-        .form-line {
-          width: 395px;
-          margin-bottom: 20px;
-          margin-right: 20px;
+        .field {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .form-line {
+            width: 395px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+          }
+
         }
 
-      }
-
-      .form-area {
-        resize: none;
-        width: 395px;
-        height: 114px;
+        .form-area {
+          resize: none;
+          width: 395px;
+          height: 114px;
+        }
       }
     }
-  }
-
   }
 }
 
