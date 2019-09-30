@@ -13,53 +13,396 @@
   <link rel="mask-icon" href="img/favicon.svg">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="../src/scss/styles.css">
 </head>
 <body>
-  <!-- MAIN CONTENT START -->
-  <section class="header container-fluid bg-cover">
-    <header class="main-menu">
-      <div class="main-logo">
-        <img src="img/logo.png" class="logo"/>
-      </div>
-      <ul class="item-list">
-        <li class="item-link"><a href="#" class="link">home</a></li>
-        <li class="item-link"><a href="#" class="link">about</a></li>
-        <li class="item-link"><a href="#" class="link">services</a></li>
-        <li class="item-link"><a href="#" class="link">works</a></li>
-        <li class="item-link"><a href="#" class="link">contact</a></li>
-      </ul>
-    </header>
+  <header class="menu container-fluid">
+    <div class="main-logo">
+      <img src="img/logo.png" class="logo"/>
+    </div>
 
+    <ul class="item-list cur-pointer">
+      <li class="item-link"><a href="#" class="link">home</a></li>
+      <li class="item-link"><a href="#" class="link">about</a></li>
+      <li class="item-link"><a href="#" class="link">services</a></li>
+      <li class="item-link"><a href="#" class="link">works</a></li>
+      <li class="item-link"><a href="#" class="link">contact</a></li>
+    </ul>
+  </header>
+  <section class="main-inner container-fluid bg-cover">
     <div class="container m-auto">
       <h1 class="title main-title">Thomas Rhythm</h1>
       <h2 class="small-title inner-title">Extraordinary art director & creative minimalism lover</h2>
 
       <div class="header-arrow">
-        <i class="fas fa-angle-down"></i>
+        <div class="arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/>
+          </svg>
+        </div>
       </div>
     </div>
-
-
   </section>
-  <!-- /#header -->
+  <section class="about default-section">
+    <div class="container m-auto">
+      <h2 class="section-title">About studio</h2>
+      <div class="row">
+        <div class="about-quote col-4">
+          Design is not making beauty, beauty emerges from selection, affinities, integration, love.
+          <h5 class="user">Louis Kahn</h5>
+        </div>
 
-  <!--<main id="main" class="flex-grow-1">-->
+        <div class="section-text col-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+        </div>
 
-  <!--</main>-->
-  <!-- /#main -->
+        <div class="section-text col-4">
+          Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.
+        </div>
+      </div>
+      <div class="about-user">
+        <div class="about-team col-4">
+          <div class="img-team">
+            <img src="img/user_1.png" class="user-img"/>
+          </div>
+          <h4 class="name-user small-title">Thomas Rhythm</h4>
+          <h5 class="job-user small-title">Art Director</h5>
+        </div>
 
-  <!--<footer id="footer" class="flex-shrink-0">-->
+        <div class="about-team col-4">
+          <div class="img-team">
+            <img src="img/user_2.png" class="user-img"/>
+          </div>
+          <h4 class="name-user small-title">Marta Laning</h4>
+          <h5 class="job-user small-title">Web engineer</h5>
+        </div>
 
-  <!--</footer>-->
-  <!-- /#footer -->
-  <!-- MAIN CONTENT END -->
+        <div class="about-team col-4">
+          <div class="img-team">
+            <img src="img/user_3.png" class="user-img"/>
+          </div>
+          <h4 class="name-user small-title">Steve ANDERS</h4>
+          <h5 class="job-user small-title">Developer</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services default-section">
+    <div class="container m-auto">
+      <h2 class="section-title">Services</h2>
+      <div class="row">
+        <div class="services-info">
+          <div class="col-2">
+            <div class="details-serv">
+              <img src="img/icon-1.png" alt="" class="services-icon">
+              <h4 class="services-title small-title">Branding</h4>
+            </div>
+          </div>
 
-  <!-- SCRIPTS START -->
-  <!-- SCRIPTS END -->
+          <div class="col-2">
+            <div class="details-serv">
+              <img src="img/icon-2.png" alt="" class="services-icon">
+              <h4 class="services-title small-title">Web Design</h4>
+            </div>
+          </div>
 
+          <div class="col-2">
+            <div class="details-serv">
+              <img src="img/icon-3.png" alt="" class="services-icon">
+              <h4 class="services-title small-title">Graphic Design</h4>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="details-serv">
+              <img src="img/icon-4.png" alt="" class="services-icon">
+              <h4 class="services-title small-title">Development</h4>
+            </div>
+          </div>
 
+          <div class="col-2">
+            <div class="details-serv">
+              <img src="img/icon-5.png" alt="" class="services-icon">
+              <h4 class="services-title small-title">Photography</h4>
+            </div>
+          </div>
+        </div>
+        <div class="services-text">
+          <div class="services-quote col-4">
+            Design is not making beauty, beauty emerges from selection, affinities, integration, love.
+            <h5 class="user">Louis Kahn</h5>
+          </div>
+
+          <div class="section-text col-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+          </div>
+
+          <div class="section-text col-4">
+            Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum..
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid black-section">
+      <div class="container m-auto">
+        <div class="content">
+          <div class="information">
+            <h2 class="small-title white-title col-6">Looking for exclusive digital services?</h2>
+            <p class="section-text white-text col-6">
+              Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor.
+              Integer non dapibus diam, ac eleifend lectus.</p>
+
+            <button class="services-btn btn">lets talk</button>
+          </div>
+          <div class="section-img col-6">
+            <img src="img/Monitor.png" alt="" class="images">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="container m-auto">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="section-text col-8">
+        <p>
+          In auctor ex id urna faucibus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="galery-links">
+        <a href="#" class="galery-link small-title">All Works</a>
+        <a href="#" class="galery-link small-title">Branding</a>
+        <a href="#" class="galery-link small-title">Design</a>
+        <a href="#" class="galery-link small-title">Photography</a>
+      </div>
+      <div class="galery-top">
+        <div class="galery-img">
+          <img src="img/galery.png" alt="img" class="portfolio-img">
+        </div>
+
+        <div class="galery-img">
+          <img src="img/galery.png" alt="img" class="portfolio-img">
+        </div>
+
+        <div class="galery-img">
+          <img src="img/galery.png" alt="img" class="portfolio-img">
+        </div>
+      </div>
+      <div class="galery-bottom">
+        <div class="galery-img">
+          <img src="img/galery.png" alt="img" class="portfolio-img">
+        </div>
+
+        <div class="galery-img">
+          <img src="img/galery.png" alt="img" class="portfolio-img">
+        </div>
+
+        <div class="galery-img">
+          <img src="img/galery.png" alt="img" class="portfolio-img">
+        </div>
+      </div>
+    </div>
+      <div class="order">
+        <div class="order-create">
+          <h2 class="section-title white-title">Like Our Creative Works?</h2>
+          <button class="btn">start project</button>
+        </div>
+      </div>
+  </section>
+  <section class="who-works-us default-section">
+    <div class="container m-auto">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <div class="advantages col-12">
+        <div class="col-4">
+          <div class="advantages-info">
+            <img src="img/us-icon-1.png" alt="" class="advantages-icon">
+            <h4 class="small-title">We’re Creative</h4>
+            <div class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="advantages-info">
+            <img src="img/us-icon-2.png" alt="" class="advantages-icon">
+            <h4 class="small-title">We’re Creative</h4>
+            <div class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="advantages-info">
+            <img src="img/us-icon-3.png" alt="" class="advantages-icon">
+            <h4 class="small-title">We’re Creative</h4>
+            <div class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="advantages-info">
+            <img src="img/us-icon-4.png" alt="" class="advantages-icon">
+            <h4 class="small-title">We’re Creative</h4>
+            <div class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="advantages-info">
+            <img src="img/us-icon-5.png" alt="" class="advantages-icon">
+            <h4 class="small-title">We’re Creative</h4>
+            <div class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="advantages-info">
+            <img src="img/us-icon-6.png" alt="" class="advantages-icon">
+            <h4 class="small-title">We’re Creative</h4>
+            <div class="section-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider default-section">
+      <div class="single-item">
+        <div class="slide">
+          <h2 class="section-title">What people say?</h2>
+          <div class="section-text col-8 m-auto"> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+            risus utaliquam dapibus. Thanks!
+          </div>
+          <h2 class="small-title inner-title">— John Doe, doodle inc.</h2>
+        </div>
+
+        <div class="slide"><h2 class="section-title">What people say?</h2>
+          <div class="section-text col-8 m-auto"> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+            risus utaliquam dapibus. Thanks!
+          </div>
+          <h2 class="small-title inner-title">— John Doe, doodle inc.</h2>
+        </div>
+        <div class="slide">
+          <h2 class="section-title">What people say?</h2>
+          <div class="section-text col-8 m-auto"> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+            risus utaliquam dapibus.Thanks!
+          </div>
+          <h2 class="small-title inner-title">— John Doe, doodle inc.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news default-section">
+    <div class="container m-auto">
+      <div class="headline">
+<h2 class="section-title">Latest News</h2>
+      <a href="#" class="small-title right-title">All News in our blog</a>
+      </div>
+      <div class="news-list">
+        <div class="news-page col-4">
+          <img src="img/news-img.png" alt="" class="news-img">
+          <h3 class="small-title title-top">New Web Design Trends</h3>
+          <h3 class="small-title title-bottom">John Doe | 10 December</h3>
+          <div class="section-text">Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</div>
+          <button class="btn btn-Gray">read more</button>
+        </div>
+
+        <div class="news-page col-4">
+          <img src="img/news-img.png" alt="" class="news-img">
+          <h3 class="small-title title-top">New Web Design Trends</h3>
+          <h3 class="small-title title-bottom">John Doe | 10 December</h3>
+          <div class="section-text">Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</div>
+          <button class="btn btn-Gray">read more</button>
+        </div>
+
+        <div class="news-page col-4">
+          <img src="img/news-img.png" alt="" class="news-img">
+          <h3 class="small-title title-top">New Web Design Trends</h3>
+          <h3 class="small-title title-bottom">John Doe | 10 December</h3>
+          <div class="section-text">Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</div>
+          <button class="btn btn-Gray">read more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form-info">
+    <div class="container m-auto">
+      <div class="form-content">
+        <h2 class="small-title title-form">Stay informed with OUR NEWSLETTER</h2>
+        <form action="" method="post">
+          <input type="text" class="info-field form-field" placeholder="ENTER EMAIL HERE">
+          <button class="btn btn-dark">subscribe</button>
+        </form>
+      </div>
+      <div class="section-text"> Please trust us, we will never send you spam</div>
+    </div>
+  </section>
+  <section class="contacts default-section">
+    <div class="container m-auto">
+      <h2 class="section-title contact-title">Contacts</h2>
+      <div class="contact-address col-12">
+        <div class="address col-4">
+          <div class="icon"></div>
+          <div class="contact-info">
+          <h4 class="small-title">Call us</h4>
+          <h4 class="section-text">+61 3 8376 6284</h4>
+          </div>
+        </div>
+
+        <div class="address col-4">
+          <div class="icon">
+            <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">-->
+            <!--  <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/>-->
+            <!--</svg>-->
+          </div>
+          <div class="contact-info">
+            <h4 class="small-title">Address</h4>
+            <h4 class="section-text">245 Quigley Blvd, Ste K</h4>
+          </div>
+        </div>
+
+        <div class="address col-4">
+          <div class="icon"></div>
+          <div class="contact-info">
+            <h4 class="small-title">Email</h4>
+            <h4 class="section-text">support@bestlooker.pro</h4>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="" class="all-form">
+          <div class="field">
+          <input type="text" class="form-field form-line" placeholder="NAME">
+          <input type="text" class="form-field form-line" placeholder="EMAIL">
+          </div>
+          <textarea name="Message" id="" cols="30" rows="10" class="form-field form-area">Message</textarea>
+        </form>
+        <button class="btn btn-dark btn-contact">submit message</button>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+    integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
-

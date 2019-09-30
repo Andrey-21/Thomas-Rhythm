@@ -5,34 +5,38 @@
 @import 'layout/layout';
 @import 'pages/pages';
 
-.header {
+
+.menu {
+  background: url("../../dist/img/main-bg.png") center center no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  z-index: 1;
+
+  .item-list {
+    display: flex;
+
+    .link {
+      color: $textColorLightGray;
+      font-family: $fontOpenSansLight;
+      margin-left: 35px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-inner {
   background: url("../../dist/img/main-bg.png");
   height: 100vh;
 
-  .main-menu {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-
-    .item-list {
-      display: flex;
-
-      .link {
-        color: $textColorLightGray;
-        font-family: $fontOpenSansLight;
-        margin-left: 35px;
-        text-transform: uppercase;
-      }
-    }
-  }
-
   .container {
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    //height: 100%;
-    //max-height: 100%;
 
     .title {
       font-size: 30px;
@@ -50,8 +54,435 @@
       width: 30px;
       height: 30px;
       background-color: $bgColorWhite;
-      transform: rotate(50deg);
+      transform: rotate(45deg);
       border-radius: 5px;
+      position: absolute;
+      bottom: 40px;
+
+      .arrow {
+        transform: rotate(-45deg);
+        margin-left: 10px;
+      }
     }
   }
 }
+
+.about {
+  border-bottom: 1px solid $bgColorGray;
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .row {
+    display: flex;
+    margin: auto;
+    margin-bottom: 100px;
+
+    .about-quote {
+      font-size: 24px;
+      color: $textColorGray;
+      font-family: $fontOpenSansLight;
+
+      .user {
+        font-size: 14px;
+        margin-top: 30px;
+      }
+    }
+
+    .section-text {
+      margin-right: 30px;
+    }
+  }
+
+  .about-user {
+    display: flex;
+    justify-content: space-between;
+
+    .about-team {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .img-team {
+        margin-bottom: 30px;
+      }
+
+      .name-user {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      .job-user {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.services {
+  padding-bottom: 0;
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .services-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .details-serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .services-icon {
+      margin-bottom: 35px;
+    }
+
+    .services-title {
+      font-size: 11px;
+    }
+  }
+
+  .services-text {
+    display: flex;
+    margin-bottom: 170px;
+
+    .services-quote {
+      font-size: 24px;
+      color: $textColorGray;
+      font-family: $fontOpenSansLight;
+
+      .user {
+        font-size: 14px;
+        margin-top: 30px;
+      }
+    }
+
+    .section-text {
+      margin-right: 30px;
+    }
+  }
+
+  .black-section {
+    min-height: 440px;
+    background-color: #000;
+    position: relative;
+
+    .white-title {
+      color: $textColorLightGray;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .white-text {
+      color: $textColorGray;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      .information {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+    }
+
+    .section-img {
+      position: absolute;
+      right: 0;
+      top: -40px;
+    }
+  }
+}
+
+.portfolio {
+  padding-top: 140px;
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .section-text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  .galery-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .galery-link {
+      margin-right: 65px;
+    }
+  }
+
+  .galery-top,
+  .galery-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .galery-img {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .order {
+    background-color: #000;
+    padding: 70px 0;
+
+    .order-create {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .white-title {
+        color: $textColorWhite;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.who-works-us {
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .advantages-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 70px;
+      margin-right: 20px;
+
+      .advantages-icon {
+        margin-bottom: 20px;
+      }
+
+      .small-title {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .slider {
+    background-color: $bgColorBlack;
+
+    .section-title {
+      color: $textColorLightGray;
+      display: flex;
+      justify-content: center;
+    }
+
+    .section-text {
+      font-size: 19px;
+      text-align: center;
+      color: $textColorLightGray;
+      margin-bottom: 30px;
+    }
+
+    .inner-title {
+      color: $textColorGray;
+      display: flex;
+      justify-content: center;
+    }
+
+    .slick-next {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      background-color: $bgColorWhite;
+      right: -40px;
+      transform: rotate(45deg);
+
+      &.slick-next:before {
+        position: absolute;
+        left: 17px;
+        top: 37px;
+        transform: rotate(-45deg);
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+
+    .slick-prev {
+      width: 80px;
+      height: 80px;
+      border-radius: 4px;
+      background-color: $bgColorWhite;
+      left: -40px;
+      transform: rotate(45deg);
+
+      &.slick-prev:before {
+        position: absolute;
+        right: 17px;
+        top: 12px;
+        transform: rotate(-45deg);
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.news {
+  padding-top: 0;
+
+  .headline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: flex-end;
+    .right-title {
+      color: $textColorGray;
+      font-size: 13px;
+    }
+  }
+
+  .news-list {
+    display: flex;
+    justify-content: space-between;
+
+    .news-page {
+      display: flex;
+      flex-direction: column;
+     align-items: flex-start;
+      margin-right: 10px;
+
+    .news-img {
+      margin-bottom: 20px;
+    }
+
+    .title-top {
+      margin-bottom: 10px;
+    }
+
+    .title-bottom {
+      color: $textColorGray;
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
+      .section-text {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.form-info {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $bgColorLightGray;
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .title-form {
+      margin-bottom: 21px;
+    }
+
+    .info-field {
+      width: 290px;
+    }
+  }
+
+  .section-text {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts {
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .contact-title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+
+    .contact-address {
+      display: flex;
+      margin-bottom: 80px;
+
+      .address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          width: 30px;
+          height: 30px;
+          background-color: $bgColorBlack;
+          transform: rotate(45deg);
+          border-radius: 5px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .contact-form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      //align-items: flex-end;
+
+      .all-form {
+        display: flex;
+
+        .field {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .form-line {
+            width: 395px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+          }
+
+        }
+
+        .form-area {
+          resize: none;
+          width: 395px;
+          height: 114px;
+        }
+      }
+    }
+  }
+}
+
+
