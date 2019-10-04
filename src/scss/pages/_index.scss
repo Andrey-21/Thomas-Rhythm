@@ -1,0 +1,92 @@
+.main-inner {
+  background-color: #131313;
+  height: 100vh;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      font-size: 30px;
+      letter-spacing: 40px;
+      margin-bottom: 100px;
+    }
+
+    .inner-title {
+      font-family: "OpenSansRegular";
+      font-size: 19px;
+      color: #323232;
+    }
+
+    .inner-arrow {
+      width: 30px;
+      height: 30px;
+      background-color: $bgColorWhite;
+      transform: rotate(45deg);
+      border-radius: 5px;
+      position: absolute;
+      bottom: 40px;
+
+      .arrow {
+        transform: rotate(-45deg);
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.about {
+  border-bottom: 1px solid $bgColorGray;
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .row {
+    display: flex;
+    margin: auto;
+    margin-bottom: 100px;
+
+    .about-quote {
+      font-size: 24px;
+      color: $textColorGray;
+      font-family: $fontOpenSansLight;
+
+      .author {
+        font-size: 14px;
+        margin-top: 30px;
+      }
+    }
+
+    .section-text {
+      margin-right: 30px;
+    }
+  }
+
+  .about-author {
+    display: flex;
+    justify-content: space-between;
+
+    .author-team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .img-team {
+        margin-bottom: 20px;
+      }
+
+      .name-author {
+        font-size: 15px;
+        margin-bottom: 7px;
+      }
+
+      .job-author {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -2,7 +2,6 @@
 .idea/
 .vscode/
 node_modules/
-slick/
 
 #Files
 package-lock.json

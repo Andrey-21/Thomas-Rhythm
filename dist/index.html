@@ -16,82 +16,97 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="../src/scss/styles.css">
 </head>
 <body>
-  <header class="menu container-fluid">
-    <div class="main-logo">
-      <img src="img/logo.png" class="logo"/>
-    </div>
+<header id="header">
+<div class="container-fluid">
+  <div class="header-menu">
+    <a href="#" class="inner-logo">
+      <img src="img/logo.png" alt="" class="logo">
+    </a>
+    <nav class="nav-header">
+      <ul class="item-list cur-pointer">
+              <li><a href="#" class="header-nav-item">home</a></li>
+              <li><a href="#" class="header-nav-item">about</a></li>
+              <li><a href="#" class="header-nav-item">services</a></li>
+              <li><a href="#" class="header-nav-item">works</a></li>
+              <li><a href="#" class="header-nav-item">contact</a></li>
+            </ul>
+    </nav>
+  </div>
+</div>
+</header>
+  <div id="main">
+  <section class="main-inner bg-cover">
+    <div class="container">
+      <h1 class="title main-title m-auto">Thomas Rhythm</h1>
+      <h2 class="small-title inner-title m-auto">Extraordinary art director & creative minimalism lover</h2>
 
-    <ul class="item-list cur-pointer">
-      <li class="item-link"><a href="#" class="link">home</a></li>
-      <li class="item-link"><a href="#" class="link">about</a></li>
-      <li class="item-link"><a href="#" class="link">services</a></li>
-      <li class="item-link"><a href="#" class="link">works</a></li>
-      <li class="item-link"><a href="#" class="link">contact</a></li>
-    </ul>
-  </header>
-  <section class="main-inner container-fluid bg-cover">
-    <div class="container m-auto">
-      <h1 class="title main-title">Thomas Rhythm</h1>
-      <h2 class="small-title inner-title">Extraordinary art director & creative minimalism lover</h2>
-
-      <div class="header-arrow">
+      <div class="inner-arrow">
         <div class="arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-            <path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"/>
-          </svg>
+          <i class="fas fa-angle-down"></i>
         </div>
       </div>
     </div>
   </section>
   <section class="about default-section">
-    <div class="container m-auto">
+    <div class="container">
       <h2 class="section-title">About studio</h2>
       <div class="row">
-        <div class="about-quote col-4">
-          Design is not making beauty, beauty emerges from selection, affinities, integration, love.
-          <h5 class="user">Louis Kahn</h5>
+        <div class="col-4">
+        <div class="about-quote">
+          <span>Design is not making beauty, beauty emerges from selection, affinities, integration, love.</span>
+          <h5 class="author">Louis Kahn</h5>
+        </div>
         </div>
 
-        <div class="section-text col-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+        <div class="col-4">
+        <div class="section-text">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus ligula semper metus pellentesque mattis. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</span>
+        </div>
         </div>
 
-        <div class="section-text col-4">
-          Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.
+        <div class="col-4">
+        <div class="section-text">
+          <span>Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.</span>
+        </div>
         </div>
       </div>
-      <div class="about-user">
-        <div class="about-team col-4">
+      <div class="about-author">
+        <div class="col-4">
+        <div class="author-team">
           <div class="img-team">
             <img src="img/user_1.png" class="user-img"/>
           </div>
-          <h4 class="name-user small-title">Thomas Rhythm</h4>
-          <h5 class="job-user small-title">Art Director</h5>
+          <h4 class="name-author small-title">Thomas Rhythm</h4>
+          <h5 class="job-author small-title">Art Director</h5>
         </div>
-
-        <div class="about-team col-4">
-          <div class="img-team">
-            <img src="img/user_2.png" class="user-img"/>
           </div>
-          <h4 class="name-user small-title">Marta Laning</h4>
-          <h5 class="job-user small-title">Web engineer</h5>
-        </div>
 
-        <div class="about-team col-4">
+        <div class="col-4">
+        <div class="author-team">
           <div class="img-team">
-            <img src="img/user_3.png" class="user-img"/>
+            <img src="img/user_2.png" class="author-img"/>
           </div>
-          <h4 class="name-user small-title">Steve ANDERS</h4>
-          <h5 class="job-user small-title">Developer</h5>
+          <h4 class="name-author small-title">Marta Laning</h4>
+          <h5 class="job-author small-title">Web engineer</h5>
         </div>
+          </div>
+
+        <div class="col-4">
+        <div class="author-team">
+          <div class="img-team">
+            <img src="img/user_3.png" class="author-img"/>
+          </div>
+          <h4 class="name-author small-title">Steve Anders</h4>
+          <h5 class="job-author small-title">Developer</h5>
+        </div>
+          </div>
       </div>
     </div>
   </section>
   <section class="services default-section">
-    <div class="container m-auto">
+    <div class="container">
       <h2 class="section-title">Services</h2>
       <div class="row">
         <div class="services-info">
@@ -146,7 +161,7 @@
       </div>
     </div>
     <div class="container-fluid black-section">
-      <div class="container m-auto">
+      <div class="container">
         <div class="content">
           <div class="information">
             <h2 class="small-title white-title col-6">Looking for exclusive digital services?</h2>
@@ -164,7 +179,7 @@
     </div>
   </section>
   <section class="portfolio">
-    <div class="container m-auto">
+    <div class="container">
       <h2 class="section-title">Portfolio</h2>
       <div class="section-text col-8">
         <p>
@@ -214,7 +229,7 @@
     </div>
   </section>
   <section class="who-works-us default-section">
-    <div class="container m-auto">
+    <div class="container">
       <h2 class="section-title">Why Choose Us?</h2>
       <div class="advantages col-12">
         <div class="col-4">
@@ -311,7 +326,7 @@
     </div>
   </section>
   <section class="news default-section">
-    <div class="container m-auto">
+    <div class="container">
       <div class="headline">
 <h2 class="section-title">Latest News</h2>
       <a href="#" class="small-title right-title">All News in our blog</a>
@@ -356,7 +371,7 @@
     </div>
   </section>
   <section class="contacts default-section">
-    <div class="container m-auto">
+    <div class="container">
       <h2 class="section-title contact-title">Contacts</h2>
       <div class="contact-address col-12">
         <div class="address col-4">
@@ -399,6 +414,9 @@
       </div>
     </div>
   </section>
+  </div>
+
+
 
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"
     integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
