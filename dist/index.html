@@ -19,14 +19,20 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!--Цвет хедера-->
   <header id="header">
     <div class="container-fluid">
+      <!--Этот контейнер не нужен-->
       <div class="header-menu">
+        <!--Отцентруй лого-->
         <a href="#" class="inner-logo">
           <img src="img/logo.png" alt="" class="logo">
         </a>
+        <!--Используй класс header-nav-->
         <nav class="nav-header">
+          <!--Используй класс header-nav-list-->
           <ul class="item-list cur-pointer">
+            <!--Поменять ховерное состояние, поменять дисплей а-шкам-->
             <li><a href="#" class="header-nav-item">home</a></li>
             <li><a href="#" class="header-nav-item">about</a></li>
             <li><a href="#" class="header-nav-item">services</a></li>
@@ -43,6 +49,7 @@
         <h1 class="title main-title m-auto">Thomas Rhythm</h1>
         <h2 class="small-title inner-title m-auto">Extraordinary art director & creative minimalism lover</h2>
 
+        <!--Пересмотри вложенность, используй классы .rhomb-icon, rhomb-icon-white и тд-->
         <div class="inner-arrow">
           <div class="arrow">
             <i class="fas fa-angle-down"></i>
@@ -51,9 +58,12 @@
       </div>
     </section>
 
+    <!--К классам секций добавляй приставку section-->
     <section class="about default-section">
       <div class="container">
         <h2 class="section-title">About studio</h2>
+        <!--Не используй такие селекторы .about .row {} и зачем на ровке margin: auto ?-->
+        <!--Оберни эту ровку в контейнер, к примеру our-info-->
         <div class="row">
 
           <div class="col-4">
@@ -76,12 +86,15 @@
           </div>
         </div>
 
+        <!--Поменяй класс на our-workers-->
         <div class="about-author">
+          <!--Тут ты что-то забыл-->
           <div class="col-4">
             <div class="author-team">
               <div class="img-team">
                 <img src="img/user_1.png" class="user-img"/>
               </div>
+              <!--Проверь размер шрифты, должен быть апперкейс и летерспейсинг в em-->
               <h4 class="name-author small-title">Thomas Rhythm</h4>
               <h5 class="job-author small-title">Art Director</h5>
             </div>
@@ -114,6 +127,7 @@
       <div class="container">
         <h2 class="section-title">Services</h2>
         <div class="services-icons">
+          <!--Тут ты что-то забыл-->
           <div class="col-2">
             <div class="services-icon-item">
               <img src="img/icon-1.png" alt="" class="services-icon">
@@ -150,9 +164,11 @@
         </div>
 
         <div class="services-info">
+          <!--У тут тебя что-то потерялось-->
           <div class="col-4">
             <div class="services-quote">
               Design is not making beauty, beauty emerges from selection, affinities, integration, love.
+              <!--Тут должен быть класс author-->
               <h5 class="user">Louis Kahn</h5>
             </div>
           </div>
@@ -175,14 +191,17 @@
     <section class="talk-section">
       <div class="container">
         <div class="content">
+          <!--Контейнер information не нужен-->
           <div class="information">
             <div class="row">
+              <!--В рове должно быть 2 кола по 6, в одном инфо во втором монитор-->
               <div class="col-6">
                 <h2 class="small-title white-title">Looking for exclusive digital services?</h2>
                 <p class="section-text white-text">
                   Proin fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor.
                   Integer non dapibus diam, ac eleifend lectus.</p>
 
+                <!--Высота кнопки должна быть 40px-->
                 <button class="services-btn btn">lets talk</button>
               </div>
             </div>
@@ -209,13 +228,14 @@
       </div>
       <div class="container-fluid">
         <div class="galery-links">
+          <!--Посмотри на макет, все ли ты правильно сделал-->
           <a href="#" class="galery-link small-title">All Works</a>
           <a href="#" class="galery-link small-title">Branding</a>
           <a href="#" class="galery-link small-title">Design</a>
           <a href="#" class="galery-link small-title">Photography</a>
         </div>
         <div class="galery">
-
+          <!--Ты что-то потерял-->
           <div class="col-4">
             <div class="galery-img">
               <img src="img/galery.png" alt="img" class="portfolio-img">
@@ -266,12 +286,13 @@
       <div class="container">
         <h2 class="section-title">Why Choose Us?</h2>
         <div class="advantages col-12">
-
+          <!--Что тут за безобразие ?-->
           <div class="col-4">
             <div class="advantages-info">
               <div class="advantages-icon-block">
                 <img src="img/us-icon-1.png" alt="" class="advantages-icon">
               </div>
+              <!--Тут что-то не так, посмотри на макет-->
               <h4 class="small-title">We’re Creative</h4>
               <div class="section-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -356,6 +377,7 @@
           <div class="section-text col-8 m-auto"> Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
             risus utaliquam dapibus. Thanks!
           </div>
+          <!--Тут что-то не так, посмотри на макет-->
           <h2 class="small-title inner-title">— John Doe, doodle inc.</h2>
         </div>
       </div>
@@ -387,6 +409,7 @@
       <div class="container">
         <div class="headline">
           <h2 class="section-title">Latest News</h2>
+          <!--Тут что-то не так, посмотри на макет-->
           <a href="#" class="small-title right-title">All News in our blog</a>
         </div>
 
@@ -397,6 +420,7 @@
               <div class="article-news-img">
                 <img src="img/news-img.png" alt="" class="news-img">
               </div>
+              <!--Тут что-то не так, посмотри на макет-->
               <h3 class="small-title article-title">New Web Design Trends</h3>
               <h3 class="small-title article-info">John Doe | 10 December</h3>
               <div class="section-text article-text">Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.</div>
@@ -447,6 +471,7 @@
           </form>
         </div>
         <div class="section-text">
+          <!--Размер текста-->
           <i class="fas fa-info-circle"></i>
           Please trust us, we will never send you spam
         </div>
@@ -458,9 +483,10 @@
         <div class="row">
           <h2 class="section-title contact-title">Contacts</h2>
           <div class="contact-address m-auto">
-
+            <!--Пиздец! Пиздец!-->
             <div class="col-4">
               <div class="address">
+                <!--rhomb-icon и бордер радиус поменьше сделай-->
                 <div class="icon">
                   <i class="fas fa-phone"></i>
                 </div>
@@ -494,15 +520,18 @@
                 </div>
               </div>
             </div>
-
+            <!--Не вздумай это сувать туда куда не надо! И перенеси на уровень вверх-->
             <div class="contact-form">
+              <!--Поставь класс contact-form на форму, а внешний див вообще убери-->
               <form action="" class="all-form">
+                <!--Нужна ровка и 2 кола по 6-->
                 <div class="field">
                   <input type="text" class="form-control form-line" placeholder="NAME">
                   <input type="text" class="form-control form-line" placeholder="EMAIL">
                 </div>
                 <textarea name="Message" id="" cols="30" rows="10" class="form-control form-area">Message</textarea>
               </form>
+              <!--Кнопку перенеси в форму-->
               <button class="btn btn-dark btn-contact">submit message</button>
             </div>
           </div>
