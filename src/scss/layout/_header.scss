@@ -1,5 +1,35 @@
 // ========== HEADER START ========== //
 #header {
-   
+  background-color: $bgColorBlack;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  width: 100%;
+
+  .header-menu {
+    display: flex;
+    justify-content: space-between;
+
+    .nav-header {
+      color: $textColorLightGray;
+
+      .item-list {
+        display: flex;
+
+        .header-nav-item {
+          font-family: $fontOpenSansLight;
+          text-transform: uppercase;
+          padding: 15px;
+          font-size: 11px;
+          transition: .3s;
+
+          &:hover {
+            background-color: $bgColorGray;
+            color: $bgColorBlack;
+          }
+        }
+      }
+    }
+  }
 }
 // ========== HEADER END ========== //

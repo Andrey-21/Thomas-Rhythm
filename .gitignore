@@ -2,6 +2,7 @@
 .idea/
 .vscode/
 node_modules/
+.sass-cache/
 
 #Files
 package-lock.json

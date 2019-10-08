@@ -1,18 +1,39 @@
 // ========== DEFAULT COMPONENTS START ========== //
 .default-section {
-
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 .main-title {
-  font-family: "DosisRegular";
+  font-family: $fontDosisRegular;
   text-transform: uppercase;
   color: $textColorLightGray;
 }
 .section-title {
-  font-family: "DosisRegular";
+  font-family: $fontDosisRegular;
   color: $textColorBlack;
+  font-size: 18px;
   text-transform: uppercase;
+  letter-spacing: 11px;
 }
 .small-title {
+  font-family: $fontDosisRegular;
+  color: $textColorBlack;
+  //text-transform: uppercase;
+  letter-spacing: 5px;
+}
 
+.section-text {
+  font-size: 15px;
+  color: $textColorGray;
+  font-family: $fontOpenSansLight;
+}
+
+.form-control {
+  outline: none;
+  background-color: $bgColorWhite;
+  color: $textColorGray;
+  border: 1px solid $bgColorGray;
+  padding: 12px 10px;
+  font-size: 14px;
 }
 // ========== DEFAULT COMPONENTS END ========== //
