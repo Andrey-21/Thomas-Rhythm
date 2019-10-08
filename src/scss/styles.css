@@ -1371,6 +1371,8 @@ body {
         margin-right: 17px; }
         .contacts .container .contact-address .address .icon .fas {
           transform: rotate(-45deg); }
+        .contacts .container .contact-address .address .icon .fas-phone {
+          transform: rotate(45deg); }
     .contacts .container .contact-address .contact-form {
       display: flex;
       align-items: center;
