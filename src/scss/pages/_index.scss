@@ -151,7 +151,6 @@
 }
 
 .talk-section {
-  //min-height: 440px;
   background-color: #000;
   position: relative;
   padding-top: 140px;
@@ -266,6 +265,11 @@
       .small-title {
         margin-bottom: 30px;
       }
+
+      .advantages-icon-block {
+        max-width: 48px;
+        width: 100%;
+      }
     }
   }
 }
@@ -275,10 +279,23 @@
   background-color: $bgColorBlack;
   overflow: hidden;
 
-  .section-title {
+  .slide-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    border: 2px solid $bgColorWhite;
+    border-radius: 50%;
+    color: $textColorWhite;
+    text-align: center;
+    padding-top: 3px;
+    margin-bottom: 30px;
+  }
+
+  .slide-title {
     color: $textColorLightGray;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .section-text {
@@ -301,6 +318,15 @@
     background-color: $bgColorWhite;
     right: -40px;
     transform: rotate(45deg);
+    display: block;
+    color: $bgColorBlack;
+
+    .fas {
+      margin-left: 15px;
+      transform: rotate(-45deg);
+      margin-top: 41px;
+      font-size: 20px;
+    }
 
     &.slick-next:before {
       position: absolute;
@@ -319,6 +345,15 @@
     background-color: $bgColorWhite;
     left: -40px;
     transform: rotate(45deg);
+    color: $bgColorBlack;
+    display: block;
+
+    .fas {
+      margin-left: 55px;
+      transform: rotate(-45deg);
+      margin-bottom: 39px;
+      font-size: 20px;
+    }
 
     &.slick-prev:before {
       position: absolute;
@@ -402,7 +437,7 @@
     justify-content: center;
     line-height: 15px;
 
-    i {
+    .fas {
       margin-right: 5px;
     }
   }
@@ -445,7 +480,7 @@
           border-radius: 5px;
           margin-right: 17px;
 
-          i {
+          .fas {
             transform: rotate(-45deg);
           }
         }
@@ -471,7 +506,6 @@
               margin-bottom: 20px;
               margin-right: 20px;
             }
-
           }
 
           .form-area {

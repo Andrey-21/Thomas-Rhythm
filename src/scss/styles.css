@@ -841,11 +841,11 @@ body {
   left: auto; }
 
 .slick-prev:before {
-  content: '<';
+  content: '';
   color: #000; }
 
 [dir='rtl'] .slick-prev:before {
-  content: '>';
+  content: '';
   color: #000; }
 
 .slick-next {
@@ -856,11 +856,11 @@ body {
   left: 25px; }
 
 .slick-next:before {
-  content: '>';
+  content: '';
   color: #000; }
 
 [dir='rtl'] .slick-next:before {
-  content: '<';
+  content: '';
   color: #000; }
 
 /* Dots */
@@ -869,7 +869,7 @@ body {
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: 25px;
   display: block;
   width: 100%;
   padding: 0;
@@ -880,11 +880,16 @@ body {
 .slick-dots li {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   margin: 0 5px;
   padding: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
   cursor: pointer; }
+
+.slick-dots li.slick-active {
+  background-color: #fff; }
 
 .slick-dots li button {
   font-size: 0;
@@ -925,7 +930,7 @@ body {
 
 .slick-dots li.slick-active button:before {
   opacity: .75;
-  color: black; }
+  color: #000; }
 
 /* Slider */
 .slick-slider {
@@ -1213,14 +1218,28 @@ body {
       margin-bottom: 20px; }
     .why-choose-us .advantages .advantages-info .small-title {
       margin-bottom: 30px; }
+    .why-choose-us .advantages .advantages-info .advantages-icon-block {
+      max-width: 48px;
+      width: 100%; }
 
 .people-reviews {
   background-color: #111111;
   overflow: hidden; }
-  .people-reviews .section-title {
+  .people-reviews .slide-icon {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding-top: 3px;
+    margin-bottom: 30px; }
+  .people-reviews .slide-title {
     color: #E7E7E7;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 30px; }
   .people-reviews .section-text {
     font-size: 19px;
     text-align: center;
@@ -1236,7 +1255,14 @@ body {
     border-radius: 4px;
     background-color: #fff;
     right: -40px;
-    transform: rotate(45deg); }
+    transform: rotate(45deg);
+    display: block;
+    color: #111111; }
+    .people-reviews .slick-next .fas {
+      margin-left: 15px;
+      transform: rotate(-45deg);
+      margin-top: 41px;
+      font-size: 20px; }
     .people-reviews .slick-next.slick-next:before {
       position: absolute;
       left: 17px;
@@ -1250,7 +1276,14 @@ body {
     border-radius: 4px;
     background-color: #fff;
     left: -40px;
-    transform: rotate(45deg); }
+    transform: rotate(45deg);
+    color: #111111;
+    display: block; }
+    .people-reviews .slick-prev .fas {
+      margin-left: 55px;
+      transform: rotate(-45deg);
+      margin-bottom: 39px;
+      font-size: 20px; }
     .people-reviews .slick-prev.slick-prev:before {
       position: absolute;
       right: 17px;
@@ -1304,7 +1337,7 @@ body {
     display: flex;
     justify-content: center;
     line-height: 15px; }
-    .section-subscribe .section-text i {
+    .section-subscribe .section-text .fas {
       margin-right: 5px; }
 
 .contacts .container {
@@ -1336,7 +1369,7 @@ body {
         transform: rotate(45deg);
         border-radius: 5px;
         margin-right: 17px; }
-        .contacts .container .contact-address .address .icon i {
+        .contacts .container .contact-address .address .icon .fas {
           transform: rotate(-45deg); }
     .contacts .container .contact-address .contact-form {
       display: flex;
