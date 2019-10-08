@@ -1,15 +1,16 @@
 .btn {
-  padding: 15px 40px;
+  padding: 12px 35px;
   font-family: $fontDosisRegular;
   text-transform: uppercase;
   background-color: $bgColorGray;
   color: $textColorBlack;
   border-radius: 4px;
   letter-spacing: 3px;
+  transition: .3s;
 
   &.btn-dark {
-    padding: 13px 20px;
-    background-color: $bgColorBlack;
+    padding: 11px 18px;
+    background-color: #323232;
     color: $textColorWhite;
     font-family: $fontOpenSansRegular;
   }
@@ -19,6 +20,11 @@
     color: $textColorGray;
     font-family: $fontOpenSansRegular;
     font-size: 11px;
+  }
+
+  &:hover {
+    background-color: #777777;
+    color: $bgColorBlack;
   }
 }
 
