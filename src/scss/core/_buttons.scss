@@ -13,8 +13,11 @@
     background-color: #323232;
     color: $textColorWhite;
     font-family: $fontOpenSansRegular;
+
+    // Ховеры перенеси внутрь подклассов
   }
 
+  // Что тут делает большая буква ?
   &.btn-Gray {
     padding: 10px 15px;
     color: $textColorGray;
