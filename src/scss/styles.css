@@ -614,6 +614,13 @@ body {
   padding: 12px 10px;
   font-size: 14px; }
 
+.rhomb-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  border-radius: 3px; }
+
 .btn {
   padding: 12px 35px;
   font-family: "DosisRegular", sans-serif;
@@ -885,26 +892,31 @@ body {
 
 #header {
   background-color: #111111;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: fixed;
-  width: 100%; }
-  #header .header-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  #header .container-fluid {
     display: flex;
     justify-content: space-between; }
-    #header .header-menu .nav-header {
-      color: #E7E7E7; }
-      #header .header-menu .nav-header .item-list {
-        display: flex; }
-        #header .header-menu .nav-header .item-list .header-nav-item {
-          font-family: "OpenSansLight", sans-serif;
-          text-transform: uppercase;
-          padding: 15px;
-          font-size: 11px;
-          transition: .3s; }
-          #header .header-menu .nav-header .item-list .header-nav-item:hover {
-            background-color: #CFCFCF;
-            color: #111111; }
+    #header .container-fluid .inner-logo {
+      display: inline-flex;
+      align-items: center; }
+    #header .container-fluid .header-nav .header-nav-list {
+      display: flex; }
+      #header .container-fluid .header-nav .header-nav-list .header-nav-item {
+        font-family: "OpenSansLight", sans-serif;
+        text-transform: uppercase;
+        padding: 15px;
+        font-size: 11px;
+        transition: .3s;
+        color: #E7E7E7;
+        opacity: .6;
+        display: inline-flex; }
+        #header .container-fluid .header-nav .header-nav-list .header-nav-item:hover {
+          opacity: 1; }
 
 .main-inner {
   background-color: #131313;
@@ -923,50 +935,44 @@ body {
       font-family: "OpenSansRegular";
       font-size: 19px;
       color: #323232; }
-    .main-inner .container .inner-arrow {
-      width: 30px;
-      height: 30px;
-      background-color: #fff;
-      transform: rotate(45deg);
-      border-radius: 5px;
+    .main-inner .container .rhomb-icon-white {
       position: absolute;
       bottom: 40px; }
-      .main-inner .container .inner-arrow .arrow {
+      .main-inner .container .rhomb-icon-white .fas {
         transform: rotate(-45deg);
-        margin-left: 14px;
-        margin-top: 3px;
-        font-size: 24px; }
+        margin-left: 15px;
+        margin-top: 11px;
+        font-size: 18px; }
 
-.about {
+.about-section {
   border-bottom: 1px solid #CFCFCF; }
-  .about .section-title {
+  .about-section .section-title {
     margin-bottom: 40px; }
-  .about .row {
+  .about-section .our-info {
     display: flex;
-    margin: auto;
     margin-bottom: 100px; }
-    .about .row .about-quote {
+    .about-section .our-info .about-quote {
       font-size: 24px;
       color: #777777;
       font-family: "OpenSansLight", sans-serif; }
-      .about .row .about-quote .author {
+      .about-section .our-info .about-quote .author {
         font-size: 14px;
         margin-top: 30px; }
-    .about .row .section-text {
+    .about-section .our-info .section-text {
       margin-right: 30px; }
-  .about .about-author {
+  .about-section .about-author {
     display: flex;
     justify-content: space-between; }
-    .about .about-author .author-team {
+    .about-section .about-author .author-team {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .about .about-author .author-team .img-team {
+      .about-section .about-author .author-team .img-team {
         margin-bottom: 20px; }
-      .about .about-author .author-team .name-author {
+      .about-section .about-author .author-team .name-author {
         font-size: 15px;
         margin-bottom: 7px; }
-      .about .about-author .author-team .job-author {
+      .about-section .about-author .author-team .job-author {
         font-size: 12px; }
 
 .services {

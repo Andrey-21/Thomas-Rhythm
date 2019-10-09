@@ -22,17 +22,11 @@
   <!--Цвет хедера-->
   <header id="header">
     <div class="container-fluid">
-      <!--Этот контейнер не нужен-->
-      <div class="header-menu">
-        <!--Отцентруй лого-->
         <a href="#" class="inner-logo">
           <img src="img/logo.png" alt="" class="logo">
         </a>
-        <!--Используй класс header-nav-->
-        <nav class="nav-header">
-          <!--Используй класс header-nav-list-->
-          <ul class="item-list cur-pointer">
-            <!--Поменять ховерное состояние, поменять дисплей а-шкам-->
+        <nav class="header-nav">
+          <ul class=" header-nav-list cur-pointer">
             <li><a href="#" class="header-nav-item">home</a></li>
             <li><a href="#" class="header-nav-item">about</a></li>
             <li><a href="#" class="header-nav-item">services</a></li>
@@ -40,7 +34,6 @@
             <li><a href="#" class="header-nav-item">contact</a></li>
           </ul>
         </nav>
-      </div>
     </div>
   </header>
   <main id="main">
@@ -49,21 +42,18 @@
         <h1 class="title main-title m-auto">Thomas Rhythm</h1>
         <h2 class="small-title inner-title m-auto">Extraordinary art director & creative minimalism lover</h2>
 
-        <!--Пересмотри вложенность, используй классы .rhomb-icon, rhomb-icon-white и тд-->
-        <div class="inner-arrow">
-          <div class="arrow">
+        <div class="rhomb-icon rhomb-icon-white">
             <i class="fas fa-angle-down"></i>
-          </div>
         </div>
       </div>
     </section>
 
-    <!--К классам секций добавляй приставку section-->
-    <section class="about default-section">
+    <section class="about-section default-section">
       <div class="container">
         <h2 class="section-title">About studio</h2>
         <!--Не используй такие селекторы .about .row {} и зачем на ровке margin: auto ?-->
         <!--Оберни эту ровку в контейнер, к примеру our-info-->
+        <div class="our-info">
         <div class="row">
 
           <div class="col-4 col">
@@ -84,6 +74,7 @@
               <span>Etiam sit amet fringilla lacus. Pellentesque suscipit ante at ullamcorper pulvinar neque porttitor. Integer lectus. Praesent sed nisi eleifend, fermentum orci amet, iaculis libero. Donec vel ultricies purus. Nam dictum sem, eu aliquam ipsum.</span>
             </div>
           </div>
+        </div>
         </div>
 
         <!--Поменяй класс на our-workers-->
@@ -548,3 +539,6 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+
+

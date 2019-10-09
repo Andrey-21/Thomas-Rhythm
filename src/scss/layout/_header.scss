@@ -1,19 +1,25 @@
 // ========== HEADER START ========== //
 #header {
   background-color: $bgColorBlack;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   position: fixed;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-  .header-menu {
+  .container-fluid {
     display: flex;
     justify-content: space-between;
 
-    .nav-header {
-      color: $textColorLightGray;
+    .inner-logo {
+      display: inline-flex;
+      align-items: center;
+    }
 
-      .item-list {
+    .header-nav {
+
+      .header-nav-list {
         display: flex;
 
         .header-nav-item {
@@ -22,10 +28,12 @@
           padding: 15px;
           font-size: 11px;
           transition: .3s;
+          color: $textColorLightGray;
+          opacity: .6;
+          display: inline-flex;
 
           &:hover {
-            background-color: $bgColorGray;
-            color: $bgColorBlack;
+            opacity: 1;
           }
         }
       }

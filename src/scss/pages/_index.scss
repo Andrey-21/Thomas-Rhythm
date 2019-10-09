@@ -23,35 +23,29 @@
       color: #323232;
     }
 
-    .inner-arrow {
-      width: 30px;
-      height: 30px;
-      background-color: $bgColorWhite;
-      transform: rotate(45deg);
-      border-radius: 5px;
+    .rhomb-icon-white {
       position: absolute;
       bottom: 40px;
 
-      .arrow {
+      .fas {
         transform: rotate(-45deg);
-        margin-left: 14px;
-        margin-top: 3px;
-        font-size: 24px;
+        margin-left: 15px;
+        margin-top: 11px;
+        font-size: 18px;
       }
     }
   }
 }
 
-.about {
+.about-section {
   border-bottom: 1px solid $bgColorGray;
 
   .section-title {
     margin-bottom: 40px;
   }
 
-  .row {
+  .our-info {
     display: flex;
-    margin: auto;
     margin-bottom: 100px;
 
     .about-quote {

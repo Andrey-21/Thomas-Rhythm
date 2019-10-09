@@ -36,4 +36,12 @@
   padding: 12px 10px;
   font-size: 14px;
 }
+
+.rhomb-icon {
+  width: 30px;
+  height: 30px;
+  background-color: $bgColorWhite;
+  transform: rotate(45deg);
+  border-radius: 3px;
+}
 // ========== DEFAULT COMPONENTS END ========== //
