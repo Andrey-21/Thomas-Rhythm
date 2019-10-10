@@ -17,10 +17,8 @@
     }
 
     .inner-title {
-      // Пидар ебанный, замени все шрифты на переменный scss!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      font-family: "OpenSansRegular";
       font-size: 19px;
-      color: #323232;
+      color: #3C3C3C;
     }
 
     .rhomb-icon-white {
@@ -64,7 +62,7 @@
     }
   }
 
-  .about-author {
+  .our-workers {
     display: flex;
     justify-content: space-between;
 
@@ -89,7 +87,7 @@
   }
 }
 
-.services {
+.services-section {
   // Пофиксь
   padding-bottom: 0;
 
@@ -136,7 +134,7 @@
       color: $textColorGray;
       font-family: $fontOpenSansLight;
 
-      .user {
+      .author {
         font-size: 14px;
         margin-top: 30px;
       }
@@ -158,8 +156,9 @@
   // Приставка white не годится, сверь заголовок с макетом
   .white-title {
     color: $textColorLightGray;
-    font-size: 18px;
+    font-size: 21px;
     margin-bottom: 18px;
+    width: 780px;
   }
 
   .white-text {
@@ -186,7 +185,7 @@
   }
 }
 
-.portfolio {
+.portfolio-section {
   padding-top: 140px;
 
   .section-title {
@@ -197,18 +196,23 @@
 
   .section-text {
     text-align: center;
-    margin: 0 auto;
     margin-bottom: 80px;
+
   }
 
-  // gallery-tabs
-  .galery-links {
+  .galery-tabs {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 
     .galery-link {
       margin-right: 65px;
+      opacity: .6;
+      transition: opacity .3s;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
@@ -222,8 +226,8 @@
   }
 }
 
-.order {
-  background-color: #000;
+.order-section {
+  background-color: $bgColorBlack;
   padding: 70px 0;
 
   .order-create {
@@ -239,7 +243,7 @@
   }
 }
 
-.why-choose-us {
+.why-choose-us-section {
 
   .section-title {
     display: flex;
@@ -259,8 +263,8 @@
       margin-bottom: 70px;
       margin-right: 20px;
 
-      .advantages-icon {
-        margin-bottom: 20px;
+      .advantages-icon-block {
+        margin-bottom: 35px;
       }
 
       .small-title {
@@ -276,7 +280,7 @@
 }
 
 
-.people-reviews {
+.people-reviews-section {
   background-color: $bgColorBlack;
   overflow: hidden;
 
@@ -314,6 +318,7 @@
     color: $textColorGray;
     display: flex;
     justify-content: center;
+    font-family: $fontOpenSansRegular;
   }
 
   .slick-next {
@@ -379,45 +384,41 @@
     margin-bottom: 80px;
     align-items: flex-end;
 
-    // view-all
-    .right-title {
-      color: $textColorGray;
+    .view-all {
+      color: $textColorBlack;
       font-size: 13px;
+      opacity: .6;
+      transition: opacity .3s;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
   .news-list {
-    display: flex;
-    justify-content: space-between;
 
-    .news-article {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-right: 10px;
+    .news-img {
+      margin-bottom: 20px;
+    }
 
-      .news-img {
-        margin-bottom: 20px;
-      }
+    .article-title {
+      margin-bottom: 10px;
+    }
 
-      .article-title {
-        margin-bottom: 10px;
-      }
+    .article-info {
+      color: $textColorGray;
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
 
-      .article-info {
-        color: $textColorGray;
-        font-size: 11px;
-        margin-bottom: 15px;
-      }
-
-      .article-text {
-        margin-bottom: 15px;
-      }
+    .article-text {
+      margin-bottom: 15px;
     }
   }
 }
 
-.section-subscribe {
+.subscribe-section {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: $bgColorLightGray;
@@ -434,14 +435,17 @@
 
     .info-form {
       width: 290px;
-      line-height: 21px;
+      line-height: 19px;
     }
   }
 
-  .section-text {
+  .subscribe-str {
     display: flex;
     justify-content: center;
-    line-height: 15px;
+    line-height: 11px;
+    color: $textColorGray;
+    font-family: $fontOpenSansLight;
+    font-size: 11px;
 
     .fas {
       margin-right: 5px;
@@ -449,7 +453,7 @@
   }
 }
 
-.contacts {
+.contacts-section {
 
   .container {
     display: flex;
@@ -467,7 +471,7 @@
       width: 770px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      margin-bottom: 80px;
 
       .address {
         display: flex;
@@ -495,37 +499,35 @@
           }
         }
       }
+    }
 
-      .contact-form {
+    .contact-form {
+
+      .field-input {
         display: flex;
-        align-items: center;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 80px;
 
-        .all-form {
-          display: flex;
+        .form-line {
+          width: 395px;
+          margin-bottom: 20px;
+          margin-right: 20px;
+        }
+      }
 
-          .field {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+      .field-area {
 
-            .form-line {
-              width: 395px;
-              margin-bottom: 20px;
-              margin-right: 20px;
-            }
-          }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 
-          .form-area {
-            resize: none;
-            width: 395px;
-            height: 114px;
-          }
+        .form-area {
+          resize: none;
+          width: 395px;
+          height: 114px;
+          margin-bottom: 20px;
         }
       }
     }
   }
 }
-
