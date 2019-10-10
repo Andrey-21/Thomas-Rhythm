@@ -1,4 +1,4 @@
-$('.people-reviews').slick({
+$('.people-reviews-section').slick({
   dots: true,
   prevArrow: `
     <button class="slick-prev">

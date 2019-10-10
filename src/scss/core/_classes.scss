@@ -19,6 +19,10 @@
   background-color: $bgColorWhite;
 }
 
+.bg-color-white {
+  background-color: $bgSoftGray;
+}
+
 .bg-cover {
   background-position: center;
   background-size: cover;
@@ -42,6 +46,14 @@
    -webkit-appearance: none;
    width: 0;
    height: 0;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 // ========== DEFAULT CLASSES END ========== //
