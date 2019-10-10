@@ -9,8 +9,11 @@
   margin-left: -15px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
+
+  &.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .container {
@@ -396,5 +399,12 @@
       max-width: 100%;
     }
   }
+
+.custom-col {
+  flex: 0 0 20%;
+  max-width: 100%;
+}
+
+
 
 
