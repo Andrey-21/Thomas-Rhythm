@@ -622,7 +622,7 @@ body {
 .rhomb-icon {
   width: 30px;
   height: 30px;
-  background-color: #fff;
+  line-height: 30px;
   transform: rotate(45deg);
   border-radius: 3px; }
 
@@ -635,19 +635,26 @@ body {
   border-radius: 4px;
   letter-spacing: 3px;
   transition: .3s; }
+  .btn:hover {
+    background-color: #777777;
+    color: #111111; }
   .btn.btn-dark {
     padding: 11px 18px;
     background-color: #323232;
     color: #fff;
     font-family: "OpenSansRegular", sans-serif; }
-  .btn.btn-Gray {
+    .btn.btn-dark:hover {
+      background-color: #777777;
+      color: #111111; }
+  .btn.btn-gray {
     padding: 10px 15px;
     color: #777777;
     font-family: "OpenSansRegular", sans-serif;
-    font-size: 11px; }
-  .btn:hover {
-    background-color: #777777;
-    color: #111111; }
+    font-size: 11px;
+    background-color: #E7E7E7; }
+    .btn.btn-gray:hover {
+      background-color: #111111;
+      color: #fff; }
 
 /* Slider */
 .slick-loading .slick-list {
@@ -924,7 +931,8 @@ body {
           opacity: 1; }
 
 .main-inner {
-  background-color: #131313;
+  background: url("../img/bg-fon.jpg") center center no-repeat;
+  background-size: cover;
   height: 100vh; }
   .main-inner .container {
     height: 100%;
@@ -938,10 +946,11 @@ body {
       margin-bottom: 100px; }
     .main-inner .container .inner-title {
       font-size: 19px;
-      color: #3C3C3C; }
+      color: #777777; }
     .main-inner .container .rhomb-icon-white {
       position: absolute;
-      bottom: 40px; }
+      bottom: 40px;
+      background-color: #fff; }
       .main-inner .container .rhomb-icon-white .fas {
         transform: rotate(-45deg);
         margin-left: 15px;
@@ -1236,19 +1245,14 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: center; }
-      .contacts-section .container .contact-address .address .icon {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+      .contacts-section .container .contact-address .address .rhomb-black {
         text-align: center;
         color: #fff;
         background-color: #111111;
-        transform: rotate(45deg);
-        border-radius: 5px;
         margin-right: 17px; }
-        .contacts-section .container .contact-address .address .icon .fas {
+        .contacts-section .container .contact-address .address .rhomb-black .fas {
           transform: rotate(-45deg); }
-        .contacts-section .container .contact-address .address .icon .fas-phone {
+        .contacts-section .container .contact-address .address .rhomb-black .fas-phone {
           transform: rotate(45deg); }
   .contacts-section .container .contact-form .field-input {
     display: flex;

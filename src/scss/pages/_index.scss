@@ -1,6 +1,7 @@
 .main-inner {
-  background-color: #131313;
-  //background: url("../../img/bg-fon.jpg");
+  //background-color: #131313;
+  background: url("../img/bg-fon.jpg") center center no-repeat;
+  background-size: cover;
   height: 100vh;
 
   .container {
@@ -18,12 +19,13 @@
 
     .inner-title {
       font-size: 19px;
-      color: #3C3C3C;
+      color: $textColorGray;
     }
 
     .rhomb-icon-white {
       position: absolute;
       bottom: 40px;
+      background-color: $bgColorWhite;
 
       .fas {
         transform: rotate(-45deg);
@@ -479,15 +481,10 @@
         align-items: center;
         justify-content: center;
 
-        .icon {
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
+        .rhomb-black {
           text-align: center;
           color: $textColorWhite;
           background-color: $bgColorBlack;
-          transform: rotate(45deg);
-          border-radius: 5px;
           margin-right: 17px;
 
           .fas {

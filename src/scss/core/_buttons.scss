@@ -8,26 +8,34 @@
   letter-spacing: 3px;
   transition: .3s;
 
+  &:hover {
+    background-color: #777777;
+    color: $bgColorBlack;
+  }
+
   &.btn-dark {
     padding: 11px 18px;
     background-color: #323232;
     color: $textColorWhite;
     font-family: $fontOpenSansRegular;
 
-    // Ховеры перенеси внутрь подклассов
+    &:hover {
+      background-color: #777777;
+      color: $textColorBlack;
+    }
   }
 
-  // Что тут делает большая буква ?
-  &.btn-Gray {
+  &.btn-gray {
     padding: 10px 15px;
     color: $textColorGray;
     font-family: $fontOpenSansRegular;
     font-size: 11px;
-  }
+    background-color: $bgColorLightGray;
 
-  &:hover {
-    background-color: #777777;
-    color: $bgColorBlack;
+    &:hover {
+      background-color: $bgColorBlack;
+      color: $textColorWhite;
+    }
   }
 }
 
