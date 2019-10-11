@@ -949,9 +949,13 @@ textarea.form-control {
         display: block;
         margin-right: 25px;
         text-align: center;
-        font-size: 14px; }
+        font-size: 14px;
+        transition: .3s; }
         #footer .footer-content .footer-media-links .media-rhomb .fab {
           transform: rotate(-45deg); }
+        #footer .footer-content .footer-media-links .media-rhomb:hover {
+          background-color: #111111;
+          color: #fff; }
     #footer .footer-content .footer-bottom-title {
       text-align: center;
       margin-bottom: 15px; }
