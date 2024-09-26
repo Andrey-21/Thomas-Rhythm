@@ -13,19 +13,13 @@
   color: $textColorBlack;
   font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 11px;
+  letter-spacing: 1em;
 }
 .small-title {
   font-family: $fontDosisRegular;
   color: $textColorBlack;
-  //text-transform: uppercase;
-  letter-spacing: 5px;
-}
-
-.section-text {
-  font-size: 15px;
-  color: $textColorGray;
-  font-family: $fontOpenSansLight;
+  text-transform: uppercase;
+  letter-spacing: .3em;
 }
 
 .form-control {
@@ -35,5 +29,18 @@
   border: 1px solid $bgColorGray;
   padding: 12px 10px;
   font-size: 14px;
+  width: 100%;
+}
+
+textarea.form-control{
+  resize: none;
+}
+
+.rhomb-icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  transform: rotate(45deg);
+  border-radius: 3px;
 }
 // ========== DEFAULT COMPONENTS END ========== //
